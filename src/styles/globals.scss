@@ -1,0 +1,97 @@
+@import './mixins.scss';
+@import './variables.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  background-color: $color-white;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  line-height: 1.2;
+  font-weight: bold;
+  font-family: $family-primary;
+  color: $dark-primary;
+}
+
+h1,
+.h1 {
+  font-size: 6.5rem;
+}
+
+h2,
+.h2 {
+  font-size: 6rem;
+}
+
+h3,
+.h3 {
+  font-size: 5.5rem;
+}
+
+h4,
+.h4 {
+  font-size: 4rem;
+}
+
+h5,
+.h5 {
+  font-size: 3rem;
+}
+
+h6,
+.h6 {
+  font-size: 2.5rem;
+}
+
+p,
+.p {
+  font-size: 2rem;
+  line-height: 1.25;
+  font-weight: 400;
+  font-family: $family-primary;
+  color: $color-gray;
+}
+
+.btn {
+  text-decoration: none;
+  border: none;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.25;
+  font-family: $family-secondary;
+  padding: 2rem 4.8rem;
+
+  &.btn-outline {
+    color: $color-light-primary;
+    border: 0.2rem solid $color-primary;
+    background-color: transparent;
+  }
+
+  &.btn-solid {
+    color: dark-primary;
+    background-color: $color-primary;
+  }
+}
