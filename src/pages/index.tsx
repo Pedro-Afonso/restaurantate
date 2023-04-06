@@ -1,5 +1,14 @@
 import Head from 'next/head'
 
+import {
+  Carousel,
+  Hero,
+  Menu,
+  TheStory,
+  Blog,
+  Reservation
+} from '@/shared/components'
+
 export default function Home() {
   return (
     <>
@@ -9,7 +18,15 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>Main</main>
+      <main>
+        <Hero />
+        <TheStory />
+        <Menu />
+        <Carousel />
+        {/* <SpecialOffers /> */}
+        <Blog />
+        <Reservation />
+      </main>
     </>
   )
 }

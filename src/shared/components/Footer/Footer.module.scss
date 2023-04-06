@@ -1,0 +1,134 @@
+@import '@/styles/variables.scss';
+@import '@/styles/mixins.scss';
+
+.footer {
+  background-color: $dark-primary;
+  padding-top: 10rem;
+  p {
+    color: white;
+  }
+  span {
+    color: $color-primary;
+  }
+  & > div:nth-of-type(1) {
+    @include max-width;
+  }
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  p {
+    text-decoration-line: underline;
+    font-size: 2.2rem;
+    line-height: 1.25;
+  }
+
+  @include device(tablet) {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    & > img {
+      max-width: 100%;
+      order: -1;
+    }
+  }
+}
+
+.middle {
+  @include max-width;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12.8rem;
+  margin-top: 6.4rem;
+  margin-bottom: 6.4rem;
+
+  & > div:nth-of-type(1) {
+    & > p:nth-of-type(1) {
+      margin-bottom: 3.2rem;
+    }
+    & > p:nth-of-type(2) {
+      line-height: 1.7;
+    }
+  }
+
+  & > div:nth-of-type(2) {
+    text-align: center;
+    p {
+      margin-bottom: 3.2rem;
+    }
+    input {
+      width: 35.8rem;
+    }
+    button {
+      cursor: pointer;
+      font-family: $family-secondary;
+      width: 23.2rem;
+      padding: 2rem 5rem;
+      font-size: 2.2rem;
+      font-weight: 500;
+      color: #292e36;
+      background-color: white;
+      border: none;
+    }
+  }
+
+  & > div:nth-of-type(3) {
+    text-align: right;
+    & > p:nth-of-type(1) {
+      margin-bottom: 3.2rem;
+    }
+    & > p:nth-of-type(2) {
+      line-height: 1.7;
+    }
+  }
+
+  @include device(desktop) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 2rem;
+    & > div:nth-of-type(3) {
+      text-align: center;
+    }
+  }
+
+  @include device(tablet) {
+    & > div:nth-of-type(2) {
+      input {
+        width: 100%;
+        max-width: 35.8rem;
+      }
+      button {
+        width: 100%;
+        max-width: 23.2rem;
+        padding: 0.5rem;
+      }
+    }
+  }
+}
+
+.bottom {
+  @include max-width;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  border-top: 1px solid #575b62;
+}
+
+.input {
+  display: flex;
+}
+
+.social {
+  display: flex;
+  gap: 2rem;
+
+  li {
+    list-style: none;
+  }
+}
