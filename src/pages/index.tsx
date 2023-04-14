@@ -6,7 +6,9 @@ import {
   Menu,
   TheStory,
   Blog,
-  Reservation
+  Reservation,
+  Popular,
+  Services
 } from '@/shared/components'
 
 export default function Home() {
@@ -23,7 +25,8 @@ export default function Home() {
         <TheStory />
         <Menu />
         <Carousel />
-        {/* <SpecialOffers /> */}
+        <Popular />
+        <Services />
         <Blog />
         <Reservation />
       </main>

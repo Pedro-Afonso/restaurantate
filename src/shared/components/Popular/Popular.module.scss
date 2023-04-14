@@ -1,0 +1,56 @@
+@import '@/styles/variables.scss';
+@import '@/styles/mixins.scss';
+
+.section {
+  padding: 17rem 0;
+
+  & > div {
+    @include max-width;
+
+    button.btn {
+      display: block;
+      margin: 6.8rem auto 0;
+      color: $color-primary;
+    }
+  }
+
+  @include device(desktop) {
+    padding: 8rem 0;
+  }
+
+  @include device(laptop) {
+    padding: 6rem 0;
+  }
+}
+
+.header {
+  text-align: center;
+  max-width: 70rem;
+  margin: 0 auto 7rem;
+  h3 {
+    margin-top: 1rem;
+    margin-bottom: 2.2rem;
+  }
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.card {
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+  h4 {
+    margin: 1.8rem 0;
+    position: relative;
+    span {
+      position: absolute;
+      right: 0;
+    }
+  }
+}

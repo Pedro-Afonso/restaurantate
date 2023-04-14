@@ -14,7 +14,13 @@ export const Menu = () => {
             letters, as opposed to using Content here, content making it look
             like readable English.
           </p>
-          <Image src="home/ImageSpecial.svg" width={398} height={548} alt="" />
+          <Image
+            priority={true}
+            src="/home/menu-section/special.jpg"
+            width={398}
+            height={548}
+            alt=""
+          />
           <Link href="#" className={'btn btn-outline ' + styles.link}>
             See all dishes
           </Link>
@@ -26,7 +32,7 @@ export const Menu = () => {
             <ul>
               <li>
                 <Image
-                  src="assets/menu/starters/Image01.svg"
+                  src="/home/menu-section/starters-1.png"
                   width={84}
                   height={84}
                   alt=""
@@ -42,7 +48,7 @@ export const Menu = () => {
               </li>
               <li>
                 <Image
-                  src="assets/menu/starters/Image02.svg"
+                  src="/home/menu-section/starters-2.png"
                   width={84}
                   height={84}
                   alt=""
@@ -58,7 +64,7 @@ export const Menu = () => {
               </li>
               <li>
                 <Image
-                  src="assets/menu/starters/Image03.svg"
+                  src="/home/menu-section/starters-3.png"
                   width={84}
                   height={84}
                   alt=""
@@ -74,7 +80,7 @@ export const Menu = () => {
               </li>
               <li>
                 <Image
-                  src="assets/menu/starters/Image04.svg"
+                  src="/home/menu-section/starters-4.png"
                   width={84}
                   height={84}
                   alt=""
@@ -98,7 +104,7 @@ export const Menu = () => {
             <ul>
               <li>
                 <Image
-                  src="assets/menu/main-dish/Image01.svg"
+                  src="/home/menu-section/main-1.png"
                   width={84}
                   height={84}
                   alt=""
@@ -114,7 +120,7 @@ export const Menu = () => {
               </li>
               <li>
                 <Image
-                  src="assets/menu/main-dish/Image02.svg"
+                  src="/home/menu-section/main-2.png"
                   width={84}
                   height={84}
                   alt=""
@@ -130,7 +136,7 @@ export const Menu = () => {
               </li>
               <li>
                 <Image
-                  src="assets/menu/main-dish/Image03.svg"
+                  src="/home/menu-section/main-3.png"
                   width={84}
                   height={84}
                   alt=""
@@ -146,7 +152,7 @@ export const Menu = () => {
               </li>
               <li>
                 <Image
-                  src="assets/menu/main-dish/Image04.svg"
+                  src="/home/menu-section/main-4.png"
                   width={84}
                   height={84}
                   alt=""
@@ -170,7 +176,7 @@ export const Menu = () => {
             <ul>
               <li>
                 <Image
-                  src="assets/menu/dessert/Image01.svg"
+                  src="/home/menu-section/dessert-1.png"
                   width={84}
                   height={84}
                   alt=""
@@ -186,7 +192,7 @@ export const Menu = () => {
               </li>
               <li>
                 <Image
-                  src="assets/menu/dessert/Image02.svg"
+                  src="/home/menu-section/dessert-2.png"
                   width={84}
                   height={84}
                   alt=""

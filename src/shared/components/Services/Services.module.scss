@@ -1,0 +1,58 @@
+@import '@/styles/variables.scss';
+@import '@/styles/mixins.scss';
+
+.section {
+  padding: 18rem 0;
+  background-color: $dark-primary;
+
+  & > div {
+    @include max-width;
+    display: flex;
+    justify-content: center;
+    gap: 4rem 12rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  p,
+  h3 {
+    color: $color-white;
+  }
+
+  @include device(desktop) {
+    padding: 8rem 0;
+  }
+
+  @include device(laptop) {
+    padding: 6rem 0;
+  }
+}
+
+.content {
+  padding: 3.5rem 0;
+  width: 40rem;
+
+  h3 {
+    margin-top: 1.9rem;
+    margin-bottom: 1.9rem;
+  }
+}
+
+.cards {
+  @include flex-center;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.card {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  height: 25.7rem;
+  width: 25.7rem;
+  border: 1.6rem solid $dark-tertiary;
+
+  img {
+    margin-bottom: 1.8rem;
+  }
+}

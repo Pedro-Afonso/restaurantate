@@ -15,7 +15,12 @@ export const Blog = () => {
         </div>
         <div className={styles.cards}>
           <div className={styles.card}>
-            <Image src="/home/Image01.png" width={661} height={391} alt="" />
+            <Image
+              src="/home/blog-section/1.jpg"
+              width={661}
+              height={391}
+              alt=""
+            />
             <div>
               <p className="mini-label">Restaurants</p>
               <p className="mini-label">Feb 22, 2022</p>
@@ -30,7 +35,12 @@ export const Blog = () => {
             </div>
           </div>
           <div className={styles.card}>
-            <Image src="/home/Image02.png" width={661} height={391} alt="" />
+            <Image
+              src="/home/blog-section/2.jpg"
+              width={661}
+              height={391}
+              alt=""
+            />
             <div>
               <p className="mini-label">Restaurants</p>
               <p className="mini-label">Feb 22, 2022</p>

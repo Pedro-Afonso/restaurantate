@@ -28,7 +28,13 @@ export const TheStory = () => {
         </div>
       </div>
       <div className={styles.grid}>
-        <Image src="home/ImageTheStory.svg" width={640} height={446} alt="" />
+        <Image
+          priority={true}
+          src="/home/story-section/bg-1.jpg"
+          width={640}
+          height={446}
+          alt=""
+        />
         <article className={styles.story}>
           <div>
             <h3 className="h4">The Story</h3>

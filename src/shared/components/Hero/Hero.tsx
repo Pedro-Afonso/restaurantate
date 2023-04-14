@@ -18,15 +18,17 @@ export const Hero = () => {
         </div>
         <div className={styles['hero-image']}>
           <Image
-            src="home/PhotoBanner.svg"
+            priority={true}
+            src="/home/hero-section/bg-1.png"
             width={601}
             height={747}
             alt="Restaurantate"
           />
         </div>
         <Image
+          priority={true}
           className={styles['hero-details']}
-          src="home/Pattern.svg"
+          src="home/hero-section/pattern-1.svg"
           width={363}
           height={363}
           alt=""
