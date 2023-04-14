@@ -4,7 +4,12 @@ import styles from './Reservation.module.scss'
 export const Reservation = () => {
   return (
     <section className={styles.section}>
-      <Image src="/home/Background01.png" alt="" width={1920} height={1080} />
+      <Image
+        src="/home/reservation/bg-1.jpg"
+        alt=""
+        width={1920}
+        height={1080}
+      />
       <div>
         <p className="mini-label">Reservation</p>
         <h3 className="h4">Book your table now</h3>
