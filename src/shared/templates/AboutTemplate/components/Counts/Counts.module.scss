@@ -1,0 +1,60 @@
+@import '@/styles/variables.scss';
+@import '@/styles/mixins.scss';
+
+.section {
+  padding: 12rem 0;
+  position: relative;
+  & > div {
+    @include max-width;
+  }
+
+  @include device(desktop) {
+    padding: 10rem 0;
+  }
+
+  @include device(laptop) {
+    padding: 5rem 0;
+  }
+}
+
+.grid {
+  display: flex;
+  justify-content: space-between;
+
+  & > div {
+    max-width: 28rem;
+    padding: 0 0.5rem;
+    h3 {
+      color: white;
+      font-size: 3rem;
+      margin: 2.8rem 0 1.4rem;
+    }
+    p {
+      color: white;
+      margin-bottom: 2.8rem;
+    }
+    text-align: center;
+  }
+  span {
+    display: block;
+    width: 1px;
+    height: 300px;
+    background-color: #797e89;
+  }
+
+  @include device(tablet) {
+    flex-wrap: wrap;
+    justify-content: center;
+    & > div {
+      margin-bottom: 5rem;
+    }
+    span {
+      display: none;
+    }
+  }
+}
+
+.background {
+  object-fit: cover;
+  z-index: -1;
+}

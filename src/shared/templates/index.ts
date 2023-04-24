@@ -1,0 +1,6 @@
+export { GalleryTemplate } from './GalleryTemplate'
+export { BlogTemplate } from './BlogTemplate'
+export { HomeTemplate } from './HomeTemplate'
+export { OurMenuTemplate } from './OurMenuTemplate'
+export { ReservationTemplate } from './ReservationTemplate'
+export { AboutTemplate } from './AboutTemplate'

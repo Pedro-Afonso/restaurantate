@@ -1,0 +1,8 @@
+export { Carousel } from './Carousel'
+export { Services } from './Services'
+export { TheStory } from './TheStory'
+export { Popular } from './Popular'
+export { Offer } from './Offer'
+export { Hero } from './Hero'
+export { Menu } from './Menu'
+export { Blog } from './Blog'

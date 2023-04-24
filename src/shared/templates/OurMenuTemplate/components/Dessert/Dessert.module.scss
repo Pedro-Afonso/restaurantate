@@ -1,0 +1,34 @@
+@import '@/styles/variables.scss';
+@import '@/styles/mixins.scss';
+
+.section {
+  padding: 20rem 0;
+
+  & > div {
+    @include max-width;
+    display: grid;
+    grid-template-columns: 7fr 10fr;
+    gap: 5rem;
+
+    @include device(desktop) {
+      gap: 6rem;
+    }
+
+    @include device(laptop) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  button {
+    margin-top: 2rem;
+  }
+}
+
+.image {
+  max-width: 100%;
+  object-fit: contain;
+
+  @include device(laptop) {
+    display: none;
+  }
+}

@@ -1,0 +1,47 @@
+@import '@/styles/variables.scss';
+@import '@/styles/mixins.scss';
+
+.section {
+  padding: 12rem 0;
+  & > div {
+    @include max-width;
+  }
+
+  @include device(desktop) {
+    padding: 10rem 0;
+  }
+
+  @include device(laptop) {
+    padding: 5rem 0;
+  }
+}
+
+.cards {
+  display: flex;
+  gap: 1.4rem;
+  text-align: center;
+  margin-top: 4.7rem;
+  & > div {
+    flex: 1;
+    h4 {
+      margin: 2.7rem 0 0.8rem;
+    }
+  }
+
+  @include device(tablet) {
+    flex-wrap: wrap;
+    & > div {
+      flex-basis: 22.5rem;
+    }
+  }
+}
+
+.image {
+  position: relative;
+  height: 36rem;
+  img {
+    height: 36rem;
+    max-width: 100%;
+    object-fit: cover;
+  }
+}

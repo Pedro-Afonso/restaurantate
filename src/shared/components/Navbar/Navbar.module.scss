@@ -25,6 +25,7 @@
       width: 23.2rem;
       height: 6.8rem;
       padding: 0;
+      color: $color-light-primary;
     }
 
     @include device(laptop) {

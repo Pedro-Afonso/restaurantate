@@ -1,0 +1,28 @@
+@import '@/styles/variables.scss';
+@import '@/styles/mixins.scss';
+
+.section {
+  padding: 17rem 0;
+
+  & > div {
+    @include max-width;
+  }
+
+  @include device(desktop) {
+    padding: 8rem 0;
+  }
+
+  @include device(laptop) {
+    padding: 6rem 0;
+  }
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(45rem, 1fr));
+  gap: 5.6rem;
+
+  @include device(tablet) {
+    grid-template-columns: 1fr;
+  }
+}

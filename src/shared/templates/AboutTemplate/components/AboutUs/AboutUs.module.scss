@@ -1,0 +1,148 @@
+@import '@/styles/variables.scss';
+@import '@/styles/mixins.scss';
+
+.section {
+  padding: 20rem 0;
+
+  & > div {
+    @include max-width;
+  }
+
+  @include device(desktop) {
+    padding: 10rem 0;
+  }
+
+  @include device(laptop) {
+    padding: 5rem 0;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2.3fr;
+  grid-auto-rows: 75rem;
+
+  @include device(desktop) {
+    grid-template-columns: 1fr 1.8fr;
+  }
+
+  @include device(laptop) {
+    grid-template-columns: 1fr 1.5fr;
+  }
+
+  @include device(tablet) {
+    grid-template-columns: auto;
+  }
+}
+
+.content {
+  align-self: center;
+  padding: 3.5rem 0;
+  max-width: 52.5rem;
+  position: relative;
+
+  h3 {
+    line-height: 1;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  button {
+    margin-top: 10rem;
+  }
+}
+
+.image {
+  position: relative;
+}
+
+.sign {
+  position: relative;
+  p {
+    margin-bottom: 2.8rem;
+  }
+  img {
+    width: 15.8rem;
+    height: 6.3rem;
+    position: absolute;
+    left: -2.2rem;
+  }
+}
+
+.rating {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.pattern {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.background {
+  position: absolute;
+  right: 10rem;
+  border-top-right-radius: 50%;
+  object-fit: cover;
+  max-width: 100%;
+
+  @include device(desktop) {
+    right: 5rem;
+  }
+
+  @include device(laptop) {
+    right: 0;
+    border-top-right-radius: 30%;
+  }
+
+  @include device(mobile) {
+    border-top-right-radius: 0;
+  }
+}
+
+.card {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: $color-white;
+  padding: 5.8rem;
+  width: 39.6rem;
+  max-width: 100%;
+  box-shadow: 0px 4px 33px rgba(0, 0, 0, 0.1);
+
+  @include device(tablet) {
+    grid-template-columns: auto;
+  }
+
+  @include device(mobile) {
+    bottom: 24rem;
+  }
+
+  & > div:first-of-type {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: auto;
+    gap: 0 2.9rem;
+    align-items: center;
+
+    img {
+      border-radius: 50%;
+      grid-row: span 2;
+    }
+
+    & > p:first-of-type {
+      font-family: $family-primary;
+      font-weight: 700;
+      font-size: 3rem;
+      color: #292e36;
+    }
+  }
+
+  & > p:first-of-type {
+    line-height: 1.85;
+    margin: 2rem 0;
+  }
+}

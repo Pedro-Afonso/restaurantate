@@ -44,37 +44,37 @@ export const Navbar = () => {
           <nav>
             <ul className={clNav}>
               <li>
-                <Link onClick={() => setIsMenuOpen(false)} href="#">
+                <Link onClick={() => setIsMenuOpen(false)} href="/">
                   Home
                 </Link>
               </li>
               <li>
-                <Link onClick={() => setIsMenuOpen(false)} href="#">
+                <Link onClick={() => setIsMenuOpen(false)} href="/about">
                   About
                 </Link>
               </li>
               <li>
-                <Link onClick={() => setIsMenuOpen(false)} href="#">
+                <Link onClick={() => setIsMenuOpen(false)} href="/our-menu">
                   Menu
                 </Link>
               </li>
               <li>
-                <Link onClick={() => setIsMenuOpen(false)} href="#">
+                <Link onClick={() => setIsMenuOpen(false)} href="/reservation">
                   Reservation
                 </Link>
               </li>
               <li>
-                <Link onClick={() => setIsMenuOpen(false)} href="#">
+                <Link onClick={() => setIsMenuOpen(false)} href="/gallery">
                   Gallery
                 </Link>
               </li>
               <li>
-                <Link onClick={() => setIsMenuOpen(false)} href="#">
+                <Link onClick={() => setIsMenuOpen(false)} href="/blog">
                   Blog
                 </Link>
               </li>
               <li>
-                <Link onClick={() => setIsMenuOpen(false)} href="#">
+                <Link onClick={() => setIsMenuOpen(false)} href="/contact">
                   Contact
                 </Link>
               </li>

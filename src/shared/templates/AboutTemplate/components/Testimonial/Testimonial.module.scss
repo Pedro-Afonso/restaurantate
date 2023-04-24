@@ -1,0 +1,47 @@
+@import '@/styles/variables.scss';
+@import '@/styles/mixins.scss';
+
+.section {
+  padding: 14rem 0;
+
+  & > div {
+    @include max-width;
+  }
+
+  @include device(desktop) {
+    padding: 10rem 0;
+  }
+
+  @include device(laptop) {
+    padding: 5rem 0;
+  }
+
+  background-color: $dark-primary;
+}
+
+.card {
+  p {
+    color: white;
+  }
+}
+
+.testimonial {
+  p {
+    font-family: $family-primary;
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-style: italic;
+  }
+}
+
+.info {
+  & > p:nth-of-type(2) {
+    font-family: $family-primary;
+    font-weight: 700;
+    font-size: 3rem;
+  }
+
+  & > p:nth-of-type(3) {
+    color: $color-primary;
+  }
+}
