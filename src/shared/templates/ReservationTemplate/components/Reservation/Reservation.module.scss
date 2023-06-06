@@ -1,0 +1,70 @@
+@import '@/styles/variables.scss';
+@import '@/styles/mixins.scss';
+
+.section {
+  padding: 12rem 0;
+
+  @include device(desktop) {
+    padding: 10rem 0;
+  }
+
+  @include device(laptop) {
+    padding: 5rem 0;
+  }
+}
+
+.heading {
+  text-align: left;
+  max-width: 53rem;
+  margin-left: 0;
+  margin-bottom: 2.6rem;
+}
+
+.grid {
+  @include max-width;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5.6rem;
+
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.8rem 3.5rem;
+
+    button {
+      max-width: fit-content;
+    }
+
+    input {
+      font-family: $family-secondary;
+      font-weight: 500;
+      font-size: 2.2rem;
+      color: white;
+      padding: 2rem;
+
+      border: 1px solid #858585;
+
+      &:-webkit-autofill,
+      &:-webkit-autofill:focus {
+        transition: background-color 600000s 0s, color 600000s 0s;
+      }
+    }
+
+    @include device(laptop) {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+
+  @include device(tablet) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 30rem;
+  }
+}
+
+.image {
+  position: relative;
+  img {
+    object-fit: cover;
+  }
+}

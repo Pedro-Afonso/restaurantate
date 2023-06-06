@@ -1,0 +1,134 @@
+@import '@/styles/variables.scss';
+@import '@/styles/mixins.scss';
+
+.section {
+  padding: 20rem 0;
+
+  @include device(desktop) {
+    padding: 8rem 0;
+  }
+
+  @include device(laptop) {
+    padding: 6rem 0;
+  }
+}
+
+.heading {
+  text-align: left;
+  margin-left: 0;
+  p {
+    text-align: justify;
+  }
+}
+
+.grid {
+  @include max-width;
+  display: grid;
+  grid-template-columns: 25fr 32fr;
+  gap: 5rem;
+
+  & > div:first-of-type {
+    order: 2;
+    form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.8rem 3.5rem;
+
+      button {
+        max-width: fit-content;
+        grid-column: 1/2;
+      }
+
+      input,
+      textarea {
+        min-width: 10rem;
+        font-family: $family-secondary;
+        font-weight: 500;
+        font-size: 2.2rem;
+        color: white;
+        padding: 2rem;
+
+        border: 1px solid #858585;
+
+        &:-webkit-autofill,
+        &:-webkit-autofill:focus {
+          transition: background-color 600000s 0s, color 600000s 0s;
+        }
+      }
+
+      textarea {
+        grid-column: 1/-1;
+        height: 17rem;
+      }
+
+      @include device(laptop) {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 3rem;
+      }
+
+      @include device(mobile) {
+        padding: 0;
+      }
+    }
+  }
+
+  & > div:last-of-type {
+    background-color: #fff8f5;
+    padding: 7.3rem;
+    h3 {
+      font-family: $family-tertiary;
+      margin-bottom: 2.2rem;
+    }
+
+    @include device(laptop) {
+      padding: 3rem;
+    }
+    @include device(mobile) {
+      padding: 0;
+    }
+  }
+
+  @include device(desktop) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include device(laptop) {
+    display: block;
+  }
+}
+
+.icon {
+  word-wrap: break-word;
+  &:first-of-type {
+    margin-top: 3rem;
+  }
+  &:not(:last-of-type) {
+    margin-bottom: 3rem;
+  }
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+
+  img {
+    background-color: $dark-primary;
+    width: 5.2rem;
+    height: 5.2rem;
+    border-radius: 50%;
+    padding: 1rem;
+  }
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+  img {
+    background-color: #858585;
+    width: 5.2rem;
+    height: 5.2rem;
+    padding: 1.5rem;
+    color: black;
+    border-radius: 50%;
+  }
+}

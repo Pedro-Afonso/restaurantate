@@ -20,28 +20,58 @@
 }
 
 .card {
-  p {
-    color: white;
+  .testimonial {
+    max-width: 114rem;
+    margin: 0 auto 3.8rem;
+    text-align: center;
+    p {
+      font-family: $family-tertiary;
+      color: white;
+      font-size: 2.5rem;
+      font-weight: 400;
+      font-style: italic;
+      max-width: 81.5rem;
+    }
+    & > div {
+      display: flex;
+      justify-content: space-between;
+      button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+      }
+      & > button:last-of-type {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .info {
+    margin: 0 auto;
+    text-align: center;
+    width: max-content;
+    & > p:nth-of-type(1) {
+      font-family: $family-tertiary;
+      font-weight: 700;
+      font-size: 3rem;
+      color: white;
+      margin-bottom: 1.5rem;
+    }
+
+    & > p:nth-of-type(2) {
+      color: $color-primary;
+    }
+
+    img {
+      border-radius: 50%;
+    }
+  }
+  &:not(.active) {
+    display: none;
   }
 }
 
-.testimonial {
-  p {
-    font-family: $family-primary;
-    font-size: 2.5rem;
-    font-weight: 400;
-    font-style: italic;
-  }
-}
-
-.info {
-  & > p:nth-of-type(2) {
-    font-family: $family-primary;
-    font-weight: 700;
-    font-size: 3rem;
-  }
-
-  & > p:nth-of-type(3) {
-    color: $color-primary;
-  }
+.apt {
+  display: block;
+  margin: 4.4rem auto 3.8rem;
 }

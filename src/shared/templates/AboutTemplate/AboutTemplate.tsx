@@ -1,6 +1,6 @@
 import { Banner } from '@/shared/components'
 import Head from 'next/head'
-import { AboutUs, Counts, Team } from './components'
+import { AboutUs, Counts, Team, Testimonial, Gallery } from './components'
 
 export const AboutTemplate = () => {
   return (
@@ -16,7 +16,8 @@ export const AboutTemplate = () => {
         <AboutUs />
         <Counts />
         <Team />
-        {/* <Testimonial /> */}
+        <Testimonial />
+        <Gallery />
       </main>
     </>
   )

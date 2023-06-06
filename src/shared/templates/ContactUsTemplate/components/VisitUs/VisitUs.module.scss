@@ -1,0 +1,70 @@
+@import '@/styles/variables.scss';
+@import '@/styles/mixins.scss';
+
+.section {
+  padding-bottom: 20rem;
+
+  @include device(desktop) {
+    padding: 8rem 0;
+  }
+
+  @include device(laptop) {
+    padding: 6rem 0;
+  }
+}
+
+.heading {
+  text-align: left;
+  margin-left: 0;
+  p {
+    text-align: justify;
+  }
+}
+
+.cards {
+  @include max-width;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+
+  h3 {
+    margin-bottom: 3.5rem;
+  }
+
+  & > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 2px solid #c4c4c4;
+
+    & > div:first-of-type {
+      min-height: 42rem;
+      padding: 10rem 3rem;
+
+      & > div {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        &:first-of-type {
+          margin: 3.5rem 0;
+        }
+      }
+    }
+    & > div:last-of-type {
+      position: relative;
+      img {
+        object-fit: cover;
+      }
+    }
+
+    @include device(laptop) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 200px;
+    }
+  }
+
+  @include device(desktop) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}

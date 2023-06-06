@@ -6,6 +6,7 @@ interface IHeadingSectionProps {
   title: string
   miniLabel: string
   description: string
+  className?: string
   darkBg?: boolean
 }
 
@@ -13,9 +14,12 @@ export const HeadingSection: FC<IHeadingSectionProps> = ({
   title,
   miniLabel,
   description,
-  darkBg = false
+  darkBg = false,
+  className = ''
 }) => {
-  const heading = cls(styles.heading, { [styles['dark-bg']]: darkBg })
+  const heading = cls(className, styles.heading, {
+    [styles['dark-bg']]: darkBg
+  })
 
   return (
     <div className={heading}>
